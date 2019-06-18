@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".menu_writing">
+
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:src="@drawable/logo"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bt11"
+        android:layout_margin="40dp"
+        android:layout_alignParentTop="true"
+        />
+    <Button
+        android:id="@+id/bt11"
+        android:text="level1"
+        android:textSize="30dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+
+        android:onClick="onClickButton11"
+
+        />
+    <Button
+        android:id="@+id/bt12"
+        android:text="level2"
+        android:textSize="30dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt11"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+
+        android:onClick="onClickButton12"
+        />
+    <Button
+        android:id="@+id/bt13"
+        android:text="level3"
+        android:textSize="30dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt12"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+
+        android:onClick="onClickButton13"
+        />
+</RelativeLayout>
