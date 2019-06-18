@@ -1,14 +1,5 @@
 package ibm.tf.hangul;
 
-<<<<<<< HEAD
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-
-public class MainActivity extends AppCompatActivity {
-
-=======
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,9 +11,9 @@ import android.widget.TextView;
 import java.util.HashMap;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class WritingActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String LABEL_FILE = "2350-common-hangul.txt";
+    private static final String LABEL_FILE = "512-common-hangul.txt";
     private static final String MODEL_FILE = "optimized_hangul_tensorflow.pb";
 
     private HangulClassifier classifier;
@@ -38,28 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * performed here.
      * @param savedInstanceState Bundle
      */
->>>>>>> 1c405adc34b28f040da63f39ba72725c3b3d66a9
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-<<<<<<< HEAD
-    }
-
-    public void onClickButton1(View v){
-
-        Intent intent = new Intent(this,menu_writing.class);
-        startActivity(intent);
-
-    }
-
-    public void onClickButton2(View v){
-
-        Intent intent = new Intent(this,menu_speaking.class);
-        startActivity(intent);
-    }
-}
-=======
+        setContentView(R.layout.activity_writing);
 
         paintView = (PaintView) findViewById(R.id.paintView);
 
@@ -236,4 +209,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }).start();
     }
 }
->>>>>>> 1c405adc34b28f040da63f39ba72725c3b3d66a9
+
